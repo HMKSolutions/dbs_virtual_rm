@@ -1,0 +1,20 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-dbsvirtualrm-dev-211736-authRole",
+            "UnauthRoleArn": "arn:aws:iam::533286905495:role/amplify-dbsvirtualrm-dev-211736-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::533286905495:role/amplify-dbsvirtualrm-dev-211736-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-dbsvirtualrm-dev-211736-deployment",
+            "UnauthRoleName": "amplify-dbsvirtualrm-dev-211736-unauthRole",
+            "StackName": "amplify-dbsvirtualrm-dev-211736",
+            "StackId": "arn:aws:cloudformation:us-east-1:533286905495:stack/amplify-dbsvirtualrm-dev-211736/05199580-e9fa-11ea-be53-0a91287fb5a1",
+            "AmplifyAppId": "damhqz3126g0m"
+        },
+        "categories": {
+            "auth": {
+                "dbsvirtualrm4cd69758": {}
+            }
+        }
+    }
+}
