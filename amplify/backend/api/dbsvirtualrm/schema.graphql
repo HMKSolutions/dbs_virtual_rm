@@ -1,0 +1,47 @@
+type User @model @auth(rules: [{allow: owner}])  {
+  userID: ID!
+  name: String!
+  age: String!
+  gender: String!
+  education: String!
+  employmentStatus: String!
+  occupation: String!
+  maritalStatus: String!
+  numChildren: String!
+  numParents: String!
+  wealthSource: String!
+  # investments: [Investment] @connection(keyName: "byUser", fields: ["userID", "content"])
+  # insurances: [Insurance] @connection(keyName: "byUsere", fields: ["userID", "content"]) 
+}
+
+# type Insurances @model @key(name: "byUser", fields: ["blogID"]) {
+#   id: ID!
+#   title: String!
+#   userID: ID!
+#   user: User @connection(fields: ["userID"])
+#   insurances: [Insurance] @connection(keyName: "byInsurances", fields: ["id"])
+# }
+
+# type Insurance @model @key(name: "byInsurances", fields: ["insuranceID", "content"]) @auth(rules: [{allow: owner}]) {
+#   id: ID!
+#   title: String!
+#   groupID: ID!
+#   insurance: Insurance @connection(fields: ["groupID"])
+#   content: String!
+# }
+
+# type Investments @model @key(name: "byInvestments", fields: ["investmentID", "content"]) @auth(rules: [{allow: owner}]) {
+#   id: ID!
+#   title: String!
+#   userID: ID!
+#   user: User @connection(fields: ["userID"])
+#   investment: [Investment] @connection(fields: ["byInvestments"], fields:["id"])
+# }
+
+# type Investment @model @key(name: "byInvestments", fields: ["investmentID", "content"]) @auth(rules: [{allow: owner}]) {
+#   id: ID!
+#   title: String!
+#   groupID: ID!
+#   investment: Investment @connection(fields: ["investmentID"])
+#   content: String!
+# }
